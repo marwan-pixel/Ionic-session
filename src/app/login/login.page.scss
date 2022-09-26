@@ -1,0 +1,57 @@
+$display: flex;
+$justifycontent: center;
+
+.input {
+  display: $display;
+  justify-content: $justifycontent;
+  background: linear-gradient(rgb(28, 81, 147), rgb(17, 111, 226));
+  padding: 15px;
+  margin-left: 10em;
+  margin-right: 10em;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+ion-card {
+  width: 40em;
+}
+
+.title {
+  text-align: center;
+  h3 {
+    font-family: "Segoe UI";
+    font-size: 20pt;
+  }
+  h5 {
+    font-family: "Segoe UI";
+  }
+}
+
+.button {
+  display: $display;
+  justify-content: $justifycontent;
+  .login {
+    margin-top: 20px;
+    padding: 15px;
+    width: 20em;
+    border-radius: 10px;
+    background: linear-gradient(rgb(75, 136, 212), rgb(12, 90, 185));
+    color: white;
+  }
+  .register {
+    padding: 15px;
+    width: 20em;
+    border-radius: 10px;
+    border: 1px solid rgb(75, 136, 212);
+    background: linear-gradient(rgb(75, 136, 212), rgb(12, 90, 185));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

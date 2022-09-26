@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main">
+    <div class="container">
+      <div class="title">
+        <h3>Register</h3>
+      </div>
+      <div class="input">
+        <ion-card>
+          <ion-item>
+            <ion-label position="floating">Name</ion-label>
+            <ion-input
+              [(ngModel)]="name"
+              type="text"
+              placeholder="Insert Name"
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Username</ion-label>
+            <ion-input
+              [(ngModel)]="username"
+              type="text"
+              placeholder="Insert Username"
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input
+              [(ngModel)]="password"
+              type="password"
+              placeholder="Insert Password"
+            ></ion-input>
+          </ion-item>
+        </ion-card>
+      </div>
+      <div class="button">
+        <button class="register" (click)="click()">Register</button>
+      </div>
+      <div class="title">
+        <h5>Already have an account?</h5>
+      </div>
+      <div class="button">
+        <button class="login" (click)="login()">Back To Login</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

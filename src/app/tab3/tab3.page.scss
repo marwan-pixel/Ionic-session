@@ -1,0 +1,15 @@
+.logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20em;
+  margin-right: 20em;
+  height: 100%;
+  > button {
+    height: 50px;
+    width: 40em;
+    border-radius: 5px;
+    background: linear-gradient(rgb(75, 136, 212), rgb(12, 90, 185));
+    color: white;
+  }
+}

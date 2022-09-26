@@ -1,0 +1,38 @@
+<ion-content>
+  <div class="main">
+    <div class="container">
+      <div class="title">
+        <h3>Login</h3>
+      </div>
+      <div class="input">
+        <ion-card>
+          <ion-item>
+            <ion-label position="floating">Username</ion-label>
+            <ion-input
+              [(ngModel)]="username"
+              type="text"
+              placeholder="Insert Username"
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input
+              [(ngModel)]="password"
+              type="password"
+              placeholder="Insert Password"
+            ></ion-input>
+          </ion-item>
+        </ion-card>
+      </div>
+      <div class="button">
+        <button class="login" (click)="login()">Login</button>
+      </div>
+      <div class="title">
+        <h5>Doesn't have account?</h5>
+      </div>
+      <div class="button">
+        <button class="register" (click)="register()">Register</button>
+      </div>
+    </div>
+  </div>
+</ion-content>
